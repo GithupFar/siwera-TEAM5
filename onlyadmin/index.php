@@ -32,7 +32,7 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="../index.php" class="nav-link">Beranda</a></li>
+          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
           <li class="nav-item"><a href="../penghuni.php" class="nav-link">Penghuni</a></li>
           <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
