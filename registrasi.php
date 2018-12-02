@@ -33,7 +33,7 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
           <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
@@ -68,8 +68,8 @@
                     </div>
                   </div>
                   <div class="text-center">
-                  <button type="reset" class="btn btn-default">Cancel</button>
-                  <button type="submit" class="btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
                   </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
 
 
   <footer class="footer">
-    <div class="container">
+    <div class="container fixed bottom" >
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>

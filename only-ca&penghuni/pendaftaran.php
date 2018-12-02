@@ -18,14 +18,16 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
+
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container fixed-top">
-      <a class="navbar-brand" href="index.html">SIWERA</a>
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -45,36 +47,50 @@
   </nav>
   <!-- END nav -->
 
-<div class="block-30 block-30-sm item" style="background-color: white;">
+<div class="block-30 block-30-sm item">
       <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <div class="card" style="height: 600px">
-          <h3 class="card-header">Pesan Kamar</h3>
-          <div class="card-body">
+        <div class="card" style="width: 800px;">
+          <div class="card border border-light rounded-7">
+                <div class="card-header p-0">
+                  <div class="bg-info text-white text-center py-2">
+                    <h3 style="color:white;">Pesan Kamar</h3>
+                  </div>
+                </div>
+          
           <form action="daftar_action.php" method="post">
-              <div class="form-group">
-                <label for="name" >Nama Lengkap</label>
-                <input class="form-control" type="text"
-                placeholder="ex : Rudi Hartoyo" id="name">
+            <div class="card-body p-3">
+              <div class="form-row">
+                <div class="col">
+                  <label for="name" >Nama Lengkap</label>
+                  <input class="form-control" type="text" placeholder="ex : Rudi Hartoyo" id="name" required>
+                </div>
+                <div class="col">
+                  <label for="email">Email</label>
+                  <input class="form-control" type="email" placeholder="ex: email@email.com" id="email">
+                </div>
               </div>
-              <div class="form-group">
-                <label for="email" >Email</label>
-                <input class="form-control" type="email" placeholder="ex: email@email.com" id="email">
+              
+              <div class="form-row">
+                <div class="col">
+                  <label for="ttl">Tempat,Tanggal Lahir</label>
+                  <input class="form-control" type="Date" id="ttl" required>
+                </div>
+                <div class="col">
+                  <label for="notelp">No.Telp</label>
+                  <input class="form-control" type="notelp" placeholder="ex : 085xxxxxxxxx" id="notelp" required>
+                </div>
               </div>
-              <div class="form-group">
+              <div class="form-row">
                 <label for="address">Alamat</label>
-                <input class="form-control" type="address" placeholder="ex : Jl. Teknik Kimia No.9" id="address">
+                <input class="form-control" type="address" placeholder="ex : Jl. Teknik Kimia No.9" id="address" required>
               </div>
-              <div class="form-group">
-                <label for="notelp">No.Telp</label>
-                <input class="form-control" type="notelp" placeholder="ex : 085xxxxxxxxx" id="notelp">
+            </div>
+
+            <div class="card-footer text-center">
+                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
               </div>
-              <div class="form-group">
-                <label for="ttl">Tempat,Tanggal Lahir</label>
-                <input class="form-control" type="Date" id="ttl">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-      </div>
     </div>
   </div>
 </div> 

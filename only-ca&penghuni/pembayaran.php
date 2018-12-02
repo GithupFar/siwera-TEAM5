@@ -22,8 +22,9 @@
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container fixed-top">
-      <a class="navbar-brand" href="index.html">SIWERA</a>
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -43,33 +44,43 @@
   </nav>
   <!-- END nav -->
 
-<div class="block-30 block-30-sm item" style="background-color: white;">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <div class="card" style="width: 500px">
-          <h3 class="card-header">Cek Pembayaran</h3>
-          <div class="card-body">
-           <form action="#" method="post">
-              <div class="form-group">
-                <label for="name" >Kode Booking</label>
-                <input class="form-control" type="text"
-                placeholder="ex : Rudi Hartoyo" id="name">
+<div class="block-30 block-30-sm item">
+      <div class="d-flex align-items-center flex-column justify-content-center h-100">  
+        <form action="bayar_action.php" method="post">
+          <div class="card" style="width: 500px">
+              <div class="card border-info rounded-7">
+                <div class="card-header p-0">
+                  <div class="bg-info text-white text-center py-2">
+                    <h3 style="color:white;">Cek Pembayaran</h3>
+                  </div>
+                </div>
+                <div class="card-body p-3">
+                  <div class="form-group">
+                      <label for="kbooking">Kode Booking</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="kbooking" placeholder="xxx-xxx-xxx" name="kbooking" required>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="card-footer text-center">
+                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
- 
+            </div>
+          </form>
+
               <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                   crossorigin="anonymous"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                   crossorigin="anonymous"></script>
-        </div>
       </div>
     </div>
-  </div>
-</div>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container" style="bottom:0;">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
