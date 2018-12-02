@@ -1,3 +1,10 @@
+<?php
+  session_start();
+    if (!isset($_SESSION['sudahLogin'])) {
+        header("location:../registrasi.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +43,7 @@
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
           <li class="nav-item active"><a href="contact.php" class="nav-link">Kontak</a></li>
         </ul>
+
         <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
                 <span class="caret"></span></button>
@@ -43,7 +51,7 @@
                   <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
                   <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
                 </ul>
-            </div>
+        </div>
       </div>
     </div>
   </nav>
