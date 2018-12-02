@@ -23,27 +23,40 @@
     
  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="img-its/logo-its.png">SIWERA</a>
+      <a class="navbar-brand" href="index.html">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+        <span class="oi oi-menu"></span> Beranda
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item active"><a href="berita.php" class="nav-link">Berita</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="gedung.html" class="nav-link">Gedung</a></li>
+          <li class="nav-item active"><a href="berita.html" class="nav-link">Berita</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="peta.html" class="nav-link">Peta</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- END nav -->
   
+  
 
-  <div class=" site-section bg-dark" id="blog">
+  <div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-10">
+          <span class="subheading-sm">Berita</span>
+              <h2 class="heading">Berita &amp; Acara</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" site-section bg-light" id="blog">
+    
     <div class="container">
       <div class="row">
 
@@ -129,9 +142,79 @@
   
   <footer class="footer">
     <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section">About Us</h3>
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.</p>
+          <p><a href="#" class="btn btn-primary px-4">Button</a></p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section">Blog</h3>
+          <div class="block-21 d-flex mb-4">
+            <figure class="mr-3">
+              <img src="images/img_1.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="text">
+              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-21 d-flex mb-4">
+            <figure class="mr-3">
+              <img src="images/img_2.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="text">
+              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-21 d-flex mb-4">
+            <figure class="mr-3">
+              <img src="images/img_3.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="text">
+              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="block-23">
+            <h3 class="heading-section">Contact Info</h3>
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                <li><span class="icon icon-clock-o"></span><span class="text">Monday &mdash; Friday 8:00am - 5:00pm</span></li>
+              </ul>
+            </div>
+        </div>
+        
+        
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-12 text-left">
           <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
+        </div>
+      </div>
     </div>
   </footer>
 
