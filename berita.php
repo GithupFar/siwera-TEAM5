@@ -23,18 +23,18 @@
     
  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">SIWERA</a>
+      <a class="navbar-brand" href="index.php">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Beranda
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="gedung.html" class="nav-link">Gedung</a></li>
-          <li class="nav-item active"><a href="berita.html" class="nav-link">Berita</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="peta.html" class="nav-link">Peta</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
+          <li class="nav-item active"><a href="berita.php" class="nav-link">Berita</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
         </ul>
       </div>
     </div>
