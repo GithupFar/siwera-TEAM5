@@ -36,18 +36,18 @@
           <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="registrasi.php" class="nav-link">Registrasi</a></li>
+          <li class="nav-item active"><a href="registrasi.php" class="nav-link">Registrasi</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- END nav -->
 
-  <div class="block-30 block-30-sm item">
+  <div class="block-30">
       <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <div class="card" style="width: 500px">
+        <div class="card border-primary" style="width: 500px">
             <form action="regis_action.php" class="" method="post">
-              <div class="card border-info rounded-7">
+              <div class="card border-primary rounded-7">
                 <div class="card-header p-0">
                   <div class="bg-info text-white text-center py-2">
                     <h3 style="color:white;">Registrasi</h3>
@@ -66,10 +66,10 @@
                       <input type="password" class="form-control" id="pass" placeholder="Password (SIPMABA)" name="pass">
                     </div>
                   </div>
-                  <div class="text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                </div>
+                <div class="card-footer text-center">
+                  <button type="reset" class="btn btn-default" style="color:black">Cancel</button>
                   <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-                  </div>
                 </div>
             </div>
           </form>

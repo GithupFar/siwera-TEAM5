@@ -21,10 +21,10 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="img-its/logo-its.png">SIWERA</a>
+      <img class="pull-left" style="max-width:100px; margin-top: -7px;" src="img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -33,9 +33,8 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item active"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
+          <li class="nav-item"><a href="registrasi.php" class="nav-link">Registrasi</a></li>
 
         </ul>
       </div>

@@ -23,7 +23,8 @@
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">SIWERA</a>
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:100px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -32,24 +33,31 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item active"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
           <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li class="nav-tabs"><a href="index.php" class="nav-link">Beranda</a></li>
+                  <li class="nav-item"><a href="logout.php" class="nav-link">Keluar</a></li>
+                </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- END nav -->
-  <div class="block-30 block-30-sm item">    
-    <div class="site-section bg-light">
+  <div class="site-section bg-light">
       <div class="container">
         <div class="row mb-5 pt-5 justify-content-center">
             <div class="col-md-7 text-center section-heading">
-              <h2 class="heading">Gedung &amp; Kamar </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, iusto, omnis! Quidem, sint, impedit? Dicta eaque delectus tempora hic, corporis velit doloremque quod quam laborum, nobis iusto autem culpa quaerat!</p>
+              <h2 class="heading">Gedung &amp; Kamar</h2>
             </div>
+          </div>
         <div class="row">
           <div class="col-lg-4 mb-5">
             <div class="block-34">
