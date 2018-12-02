@@ -18,22 +18,22 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
-
   </head>
   <body>
     
- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container fixed-top">
-      <a class="navbar-brand" href="index.html">SIWERA</a>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
+    <div class="container" style="color:#000;">
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
+          <li class="nav-item active"><a href="berita.php" class="nav-link">Berita</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
           <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
           <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
@@ -44,19 +44,6 @@
   </nav>
   <!-- END nav -->
   
-  
-
-  <div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10">
-          <span class="subheading-sm">Berita</span>
-              <h2 class="heading">Berita &amp; Acara</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <div class=" site-section bg-light" id="blog">
     
@@ -65,7 +52,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/tsel.jpg'); "></a>
+            <a class="image" href="blog-single.html" style="background-image: url('../images/tsel.jpg'); "></a>
             <div class="text">
               <h2 class="heading"><a href="#">Pemenang Challenge Tsel Data Experience</a></h2>
               <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
@@ -77,7 +64,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/wp.jpg'); "></a>
+            <a class="image" href="blog-single.html" style="background-image: url('../images/wp.jpg'); "></a>
             <div class="text">
               <h2 class="heading"><a href="#">Welcome Party Gedung A</a></h2>
               <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
@@ -89,7 +76,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/wp1.jpg'); "></a>
+            <a class="image" href="blog-single.html" style="background-image: url('../images/wp1.jpg'); "></a>
             <div class="text">
               
               <h2 class="heading"><a href="#">Welcome Party Gedung J</a></h2>
@@ -102,7 +89,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/wp2.jpg'); "></a>
+            <a class="image" href="blog-single.html" style="background-image: url('../images/wp2.jpg'); "></a>
             <div class="text">
               <h2 class="heading"><a href="#">Welcome Party Gedung G</a></h2>
               <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
@@ -114,7 +101,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/wp3.jpg'); "></a>
+            <a class="image" href="blog-single.html" style="background-image: url('../images/wp3.jpg'); "></a>
             <div class="text">
               <h2 class="heading"><a href="#">Welcome Party Gedung B</a></h2>
               <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
@@ -145,82 +132,11 @@
   
   <footer class="footer">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6 col-lg-4">
-          <h3 class="heading-section">About Us</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.</p>
-          <p><a href="#" class="btn btn-primary px-4">Button</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h3 class="heading-section">Blog</h3>
-          <div class="block-21 d-flex mb-4">
-            <figure class="mr-3">
-              <img src="images/img_1.jpg" alt="" class="img-fluid">
-            </figure>
-            <div class="text">
-              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block-21 d-flex mb-4">
-            <figure class="mr-3">
-              <img src="images/img_2.jpg" alt="" class="img-fluid">
-            </figure>
-            <div class="text">
-              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block-21 d-flex mb-4">
-            <figure class="mr-3">
-              <img src="images/img_3.jpg" alt="" class="img-fluid">
-            </figure>
-            <div class="text">
-              <h3 class="heading"><a href="#">Our Luxury Hotel &amp; Restaurants</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> May 29, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="block-23">
-            <h3 class="heading-section">Contact Info</h3>
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-                <li><span class="icon icon-clock-o"></span><span class="text">Monday &mdash; Friday 8:00am - 5:00pm</span></li>
-              </ul>
-            </div>
-        </div>
-        
-        
-      </div>
-      <div class="row pt-5">
-        <div class="col-md-12 text-left">
           <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
-        </div>
-      </div>
     </div>
   </footer>
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
@@ -241,6 +157,5 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="../js/google-map.js"></script>
   <script src="../js/main.js"></script>
-    
   </body>
 </html>

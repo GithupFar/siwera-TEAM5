@@ -21,20 +21,21 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container fixed-top">
-      <a class="navbar-brand" href="index.html">SIWERA</a>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
+    <div class="container" style="color:#000;">
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
           <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
+          <li class="nav-item active"><a href="peta.php" class="nav-link">Peta</a></li>
           <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
         </ul>
@@ -44,47 +45,36 @@
   <!-- END nav -->
 
 
-  
-  <div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+
+  <div class="site-section">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10">
-          <span class="subheading-sm">Peta</span>
-              <h2 class="heading">Peta Asrama</h2>
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control px-3 py-3" placeholder="Lokasi Anda">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control px-3 py-3" placeholder="Tujuan">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Petunjuk Jalan" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
         </div>
+        <div class="col-md-6" id="map"></div>
       </div>
     </div>
   </div>
 
+ <footer class="footer">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-12">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
+          </p>
+    </div>
+  </footer>
 
-          <div class="block-32">
-            <div class="col-sm-15" id="map"></div>
-            <br><br>
-            <form action="#">
-              <div class="row">
-                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                  <label for="checkin">Lokasi Anda</label>
-                  <div class="field-icon-wrap">
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                  <label for="checkin">Tujuan</label>
-                  <div class="field-icon-wrap">
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 align-self-end">
-                  <button class="btn btn-primary btn-block">Petunjuk Jalan</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
