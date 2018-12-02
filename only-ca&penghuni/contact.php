@@ -21,10 +21,9 @@
   </head>
   <body>
     
- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
-    <div class="container" style="color:#000;">
-      <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -43,184 +42,186 @@
     </div>
   </nav>
   <!-- END nav -->
-  <div class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-7 section-heading">
-            <span class="subheading-sm">Kontak</span>
-            <h2 class="heading">Kontak Penjaga</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Martin</h2>
-                  <span class="meta">Penjaga Gedung A</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src=../"images/person_2.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Nancy</h2>
-                  <span class="meta">Penjaga Gedung B</span>
+  <div class="block-30 block-30-sm item">
+    <div class="site-section bg-light">
+        <div class="container">
+          <div class="row mb-5 pt-5 justify-content-center">
+            <div class="col-md-7 text-center section-heading">
+              <h2 class="heading">Kontak Penjaga </h2>
+            </div>
+          <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Martin</h2>
+                      <span class="meta">Penjaga Gedung A</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Elizabeth</h2>
-                  <span class="meta">Penjaga Gedung C</span>
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_2.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2 >Nancy</h2>
+                      <span class="meta">Penjaga Gedung B</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Angel</h2>
-                  <span class="meta">Penjaga Gedung D</span>
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Elizabeth</h2>
+                      <span class="meta">Penjaga Gedung C</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">John</h2>
-                  <span class="meta">Penjaga Gedung E</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_2.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Jane</h2>
-                  <span class="meta">Penjaga Gedung G</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Bob</h2>
-                  <span class="meta">Penjaga Gedung H</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Alice</h2>
-                  <span class="meta">Penjaga Gedung I</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div class="col-md-6 col-lg-4">
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Andrew</h2>
-                  <span class="meta">Penjaga Gedung J</span>
-                </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>+628xxxx</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="col-md-6 col-lg-4">
-          <div class="block-23">
-            <h3 class="heading-section">Contact Info</h3>
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">Asrama ITS Surabaya, Kampus ITS, Sukolilo, Surabaya 60111</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(031) 592 5965</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">asrama@its.ac.id</span></a></li>
-                <li><span class="icon icon-clock-o"></span><span class="text">Senin &mdash; Jumat 08:00 - 16:00</span></li>
-              </ul>
-            </div>
-        </div>
 
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Angel</h2>
+                      <span class="meta">Penjaga Gedung D</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>John</h2>
+                      <span class="meta">Penjaga Gedung E</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_2.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Jane</h2>
+                      <span class="meta">Penjaga Gedung G</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Bob</h2>
+                      <span class="meta">Penjaga Gedung H</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_1.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Alice</h2>
+                      <span class="meta">Penjaga Gedung I</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-md-6 col-lg-4">
+                <div class="block-33">
+                  <div class="vcard d-flex mb-3">
+                    <div class="image align-self-center"><img src="../images/person_3.jpg" alt="Person here"></div>
+                    <div class="name-text align-self-center">
+                      <h2>Andrew</h2>
+                      <span class="meta">Penjaga Gedung J</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <blockquote>
+                      <p>+628xxxx</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="block-23">
+                <h3 class="heading-section">Contact Info</h3>
+                  <ul>
+                    <li><span class="icon icon-map-marker"></span><span class="text">Asrama ITS Surabaya, Kampus ITS, Sukolilo, Surabaya 60111</span></li>
+                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">(031) 592 5965</span></a></li>
+                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">asrama@its.ac.id</span></a></li>
+                    <li><span class="icon icon-clock-o"></span><span class="text">Senin &mdash; Jumat 08:00 - 16:00</span></li>
+                  </ul>
+                </div>
+            </div>
+
+          </div>
       </div>
     </div>
+  </div>
 
   <footer class="footer">
     <div class="container">

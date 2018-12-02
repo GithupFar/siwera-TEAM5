@@ -21,10 +21,9 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
-    <div class="container" style="color:#000;">
-      <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -44,12 +43,11 @@
   </nav>
   <!-- END nav -->
 
-
-
-  <div class="site-section">
-    <div class="container">
-      <div class="row block-9">
-        <div class="col-md-6 pr-md-5">
+  <div class="block-30 block-30-sm item">
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5 pt-5 justify-content-center"">
+          <div class="col-md-6 pr-md-5">
             <form action="#">
               <div class="form-group">
                 <input type="text" class="form-control px-3 py-3" placeholder="Lokasi Anda">
@@ -61,21 +59,21 @@
                 <input type="submit" value="Petunjuk Jalan" class="btn btn-primary py-3 px-5">
               </div>
             </form>
+          </div>
+          <div class="col-md-6" id="map"></div>
         </div>
-        <div class="col-md-6" id="map"></div>
       </div>
     </div>
   </div>
 
- <footer class="footer">
-    <div class="container">
+  <footer class="footer">
+    <div class="container" style="bottom:0;">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
     </div>
   </footer>
-
-
+<!--  -->
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

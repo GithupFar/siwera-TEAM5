@@ -21,10 +21,9 @@
   </head>
   <body>
     
- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
-    <div class="container" style="color:#000;">
-      <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -45,93 +44,96 @@
   <!-- END nav -->
   
 
-  <div class=" site-section bg-light" id="blog">
-    
-    <div class="container">
-      <div class="row">
+  <div class="block-30 block-30-sm item">
+    <div class=" site-section bg-light" id="blog">
+      <div class="container">
+        <div class="row mb-5 pt-5 justify-content-center">
+          <div class="col-md-7 text-center section-heading">
+            <h2 class="heading">Berita &amp; Acara </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, iusto, omnis! Quidem, sint, impedit? Dicta eaque delectus tempora hic, corporis velit doloremque quod quam laborum, nobis iusto autem culpa quaerat!</p>
+          </div>
 
-        <div class="col-md-12 mb-4">
-          <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('../images/tsel.jpg'); "></a>
-            <div class="text">
-              <h2 class="heading"><a href="#">Pemenang Challenge Tsel Data Experience</a></h2>
-              <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
-              <p><a href="blog-single.html">Read More...</a></p>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-12 mb-4">
-          <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('../images/wp.jpg'); "></a>
-            <div class="text">
-              <h2 class="heading"><a href="#">Welcome Party Gedung A</a></h2>
-              <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
-              <p><a href="blog-single.html">Read More...</a></p>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-12 mb-4">
-          <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('../images/wp1.jpg'); "></a>
-            <div class="text">
-              
-              <h2 class="heading"><a href="#">Welcome Party Gedung J</a></h2>
-              <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
-              <p><a href="blog-single.html">Read More...</a></p>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-12 mb-4">
-          <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('../images/wp2.jpg'); "></a>
-            <div class="text">
-              <h2 class="heading"><a href="#">Welcome Party Gedung G</a></h2>
-              <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
-              <p><a href="blog-single.html">Read More...</a></p>
-            </div>
-          </div>  
-        </div>
-
-        <div class="col-md-12 mb-4">
-          <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('../images/wp3.jpg'); "></a>
-            <div class="text">
-              <h2 class="heading"><a href="#">Welcome Party Gedung B</a></h2>
-              <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
-              <p><a href="blog-single.html">Read More...</a></p>
-            </div>
-          </div>  
-        </div>
-
-
-      </div>
-
-      <div class="row mt-5">
-                <div class="col-md-12 pt-5">
-                  <ul class="pagination custom-pagination">
-                    <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
-                    <li class="page-item active"><a class="page-linkx href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
-                  </ul>
-
-
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="block-3 d-md-flex">
+                <a class="image" href="blog-single.html" style="background-image: url('../images/tsel.jpg'); "></a>
+                <div class="text">
+                  <h2 class="heading"><a href="#">Pemenang Challenge Tsel Data Experience</a></h2>
+                  <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
+                  <p><a href="blog-single.html">Read More...</a></p>
                 </div>
-              </div>
+              </div>  
+            </div>
+
+            <div class="col-md-12 mb-4">
+              <div class="block-3 d-md-flex">
+                <a class="image" href="blog-single.html" style="background-image: url('../images/wp.jpg'); "></a>
+                <div class="text">
+                  <h2 class="heading"><a href="#">Welcome Party Gedung A</a></h2>
+                  <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
+                  <p><a href="blog-single.html">Read More...</a></p>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col-md-12 mb-4">
+              <div class="block-3 d-md-flex">
+                <a class="image" href="blog-single.html" style="background-image: url('../images/wp1.jpg'); "></a>
+                <div class="text">
+                  
+                  <h2 class="heading"><a href="#">Welcome Party Gedung J</a></h2>
+                  <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
+                  <p><a href="blog-single.html">Read More...</a></p>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col-md-12 mb-4">
+              <div class="block-3 d-md-flex">
+                <a class="image" href="blog-single.html" style="background-image: url('../images/wp2.jpg'); "></a>
+                <div class="text">
+                  <h2 class="heading"><a href="#">Welcome Party Gedung G</a></h2>
+                  <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
+                  <p><a href="blog-single.html">Read More...</a></p>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col-md-12 mb-4">
+              <div class="block-3 d-md-flex">
+                <a class="image" href="blog-single.html" style="background-image: url('../images/wp3.jpg'); "></a>
+                <div class="text">
+                  <h2 class="heading"><a href="#">Welcome Party Gedung B</a></h2>
+                  <p class="meta"><em>Posted on</em> <a href="">June 20, 2018</a> <span class="sep">&bullet;</span> <em>by</em> <a href="#">Admin</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolorem. Officiis fugit dicta earum, sequi...</p>
+                  <p><a href="blog-single.html">Read More...</a></p>
+                </div>
+              </div>  
+            </div>
+        </div>
+          <div class="row mt-5">
+            <div class="col-md-12 pt-5">
+              <ul class="pagination custom-pagination">
+                <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
+                <li class="page-item active"><a class="page-linkx href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  
-  <footer class="footer">
-    <div class="container">
+
+
+<footer class="footer">
+    <div class="container" style="bottom:0;">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
