@@ -21,8 +21,8 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark bg-dark" id="ftco-navbar">
-    <div class="container" style="color:#000;">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+    <div class="container">
       <a class="navbar-brand" href="index.php">
       <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,7 @@
           <li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
           <li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li>
+
         </ul>
       </div>
     </div>

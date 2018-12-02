@@ -8481,7 +8481,7 @@ textarea.form-control {
       z-index: 2; }
     .block-32 .field-icon-wrap select {
       -webkit-appearance: none;
-      -moz-appearance: none;
+      -moz-appearance: nonediv class="block-30 block-30-sm item";
       appearance: none;
       width: 100%; }
   .block-32 .btn {
