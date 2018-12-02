@@ -38,26 +38,31 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <!--li class="nav-item"><a href="berita.php" class="nav-link">Berita</a></li-->
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <!--li class="nav-item"><a href="peta.php" class="nav-link">Peta</a></li-->
           <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
-          <li class="nav-item"><a href="logout.php" class="nav-link">Keluar</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
         </ul>
+
+        <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
+                  <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
+                </ul>
+        </div>
       </div>
     </div>
   </nav>
   <!-- END nav -->
   
-  <div class="block-30" style="position: relative;">
+  <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 item" style="background-image: url('../images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="block-30" style="background-image: url('../img-its/bg_2.png');" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-10">
+            <div class="col-md-12">
               <span class="subheading-sm">Selamat Datang</span>
               <h2 class="heading">SI Website Asrama ITS</h2>
               <p><a href="pembayaran.php" class="btn py-4 px-5 btn-primary">Cek Pembayaran</a>

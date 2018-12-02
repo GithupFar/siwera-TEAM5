@@ -2489,7 +2489,8 @@ input[type="button"].btn-block {
 .dropright,
 .dropdown,
 .dropleft {
-  position: relative; }
+  position: relative;
+  }
 
 .dropdown-toggle::after {
   display: inline-block;
@@ -2516,7 +2517,7 @@ input[type="button"].btn-block {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #212529;
   text-align: left;
   list-style: none;

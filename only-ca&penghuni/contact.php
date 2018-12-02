@@ -31,13 +31,19 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
           <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
           <li class="nav-item active"><a href="contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="logout.php" class="nav-link">Keluar</a></li>
         </ul>
+        <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
+                  <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
+                </ul>
+            </div>
       </div>
     </div>
   </nav>
