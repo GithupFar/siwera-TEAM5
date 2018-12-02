@@ -43,33 +43,38 @@
   </nav>
   <!-- END nav -->
 
-<div class="">
-  <div class="container justify-content-center">
-    <div class="my-5">
-      <div class="card bg-light">
-        <div class="card-body">
-          <form action="#" method="post">
+<div class="block-30 block-30-sm item" style="background-color: white;">
+      <div class="d-flex align-items-center flex-column justify-content-center h-100">
+        <div class="card" style="width: 500px">
+          <h3 class="card-header">Cek Pembayaran</h3>
+          <div class="card-body">
+           <form action="#" method="post">
               <div class="form-group">
                 <label for="name" >Kode Booking</label>
                 <input class="form-control" type="text"
                 placeholder="ex : Rudi Hartoyo" id="name">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            </form>
+ 
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                  crossorigin="anonymous"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                  crossorigin="anonymous"></script>
         </div>
       </div>
     </div>
   </div>
-</div> 
-  
+</div>
 
-  <!--footer class="footer">
+  <footer class="footer">
     <div class="container">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
     </div>
-  </footer-->
+  </footer>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>

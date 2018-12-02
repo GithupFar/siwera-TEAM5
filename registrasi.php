@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -16,16 +17,16 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/icomoon.css"> 
+    <!--link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"-->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">SIWERA</a>
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -43,26 +44,36 @@
   </nav>
   <!-- END nav -->
 
-  <div class="block-30 block-30-sm item" style="background-color: white;">
+  <div class="block-30 block-30-sm item">
       <div class="d-flex align-items-center flex-column justify-content-center h-100">
         <div class="card" style="width: 500px">
-          <h3 class="card-header">Registrasi</h3>
-          <div class="card-body">
-           <form action="login_action.php" class="" method="post">
-             <div class="form-group">
-               <label for="nosipmaba">No Pendaftaran</label>
-               <div class="col-sm-25">
-                <input type="text" class="form-control" id="nosipmaba" placeholder="No Pendaftaran ITS(SIPMABA)" name="nosipmaba">
-               </div>
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="pass" placeholder="Password (SIPMABA)" name="pass">
-              </div>
-              <button type="reset" class="btn btn-default">Cancel</button>
-              <button type="submit" class="btn btn-primary">Submit</button>
-             </form>
- 
+            <form action="login_action.php" class="" method="post">
+              <div class="card border-info rounded-7">
+                <div class="card-header p-0">
+                  <div class="bg-info text-white text-center py-2">
+                    <h3 style="color:white;">Registrasi</h3>
+                  </div>
+                </div>
+                <div class="card-body p-3">
+                  <div class="form-group">
+                      <label for="nosipmaba">No Pendaftaran</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="nosipmaba" placeholder="No Pendaftaran ITS(SIPMABA)" name="nosipmaba" required>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group mb-2"> 
+                      <input type="password" class="form-control" id="pass" placeholder="Password (SIPMABA)" name="pass">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                  <button type="reset" class="btn btn-default">Cancel</button>
+                  <button type="submit" class="btn-primary">Submit</button>
+                  </div>
+                </div>
+            </div>
+          </form>
               <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                   crossorigin="anonymous"></script>
@@ -71,8 +82,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 
   <footer class="footer">

@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #fc3c3c;
+  --primary: #0088cc;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -5029,7 +5029,7 @@ button.bg-dark:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #fc3c3c !important; }
+  border-color: #0044cc !important; }
 
 .border-secondary {
   border-color: #6c757d !important; }
@@ -7134,10 +7134,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #fc3c3c !important; }
+  color: #fff !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #fb0a0a !important; }
+  color: #fff !important; }
 
 .text-secondary {
   color: #6c757d !important; }
@@ -7273,12 +7273,12 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  line-height: 1.5;
-  color: #000;
-  font-weight: 300; }
+   /* line-height: 1.5; */
+  /* color: #000; */
+  /* font-weight: 300; */ }
 
 .text-primary {
-  color: #fc3c3c !important; }
+  color: #0088cc !important; }
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -7527,20 +7527,20 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fc3c3c;
-    border: 2px solid #fc3c3c;
+    background: #0088cc;
+    border: 2px solid #0088cc;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 2px solid #fc3c3c;
+      border: 2px solid #0088cc;
       background: transparent;
-      color: #fc3c3c; }
+      color: white; }
     .btn.btn-primary.btn-outline-primary {
-      border: 2px solid #fc3c3c;
+      border: 2px solid #0088cc;
       background: transparent;
-      color: #fc3c3c; }
+      color: white; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 2px solid transparent;
-        background: #fc3c3c;
+        background: #0088cc;
         color: #000; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.8);
@@ -7617,7 +7617,7 @@ textarea.form-control {
   visibility: hidden; }
 
 .bg-primary {
-  background: #fc3c3c !important; }
+  background:  #0088cc !important; }
 
 .site-section {
   padding: 7em 0; }
@@ -8576,18 +8576,18 @@ textarea.form-control {
       .block-30 .heading {
         font-size: 100px; } }
   .block-30 .btn {
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 0;
-    border: 2px solid transparent;
+    border: 2px solid #f8f9fa;
     font-size: 14px;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: #999999;
+    color: #212529;
     -webkit-box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2); }
     .block-30 .btn:hover {
-      border-color: #fff;
-      color: #fff; }
+      border-color: #17a2b8;
+      color: #f8f9fa; }
   .block-30.block-30-sm, .block-30.block-30-sm .row {
     min-height: 700px;
     height: 70vh; }
