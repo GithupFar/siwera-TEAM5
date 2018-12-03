@@ -47,33 +47,30 @@
                 </div>
                 
                 <form action="proses-pendaftaran.php" method="POST">
-                  <fieldset>
-                    <!-- <p>
-                      <label for="pb_id">ID Pembayaran: </label>
-                      <input type="text" name="pb_id" />
-                    </p> -->
-                    <p>
-                      <label for="pm_id">ID Pemesanan : </label>
-                      <input type="text" name="pm_id">
-                    </p>
-                    <p>
-                      <label for="p_nrp">NRP Pemesanan: </label>
-                      <input type="text" name="p_nrp">
-                    </p>
-                    <p>
-                      <label for="pb_status">Status Pembayaran: </label>
-                      <input type="text" name="pb_status">
-                    </p>
-                    <p>
-                      <input type="submit" value="Daftar" name="daftar">
-                    </p>
-                  </fieldset>
-
+                  <div class="card-body p-3">
+                    <div class="form-row">
+                      <label for="pm_id">ID Pemesanan</label>
+                      <input class="form-control" type="text" name="pm_id">
+                    </div>
+                    <div class="form-row">
+                      <label for="p_nrp">NRP Pemesanan</label>
+                      <input class="form-control" type="text" name="p_nrp">
+                    </div>
+                    <div class="form-row">
+                      <label for="pb_status">Status Pembayaran</label>
+                      <input class="form-control" type="text" name="pb_status">
+                    </div>
+                  </div>
+                    <div class="card-footer text-center">
+                      <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                      <button type="submit" class="btn btn-info" style="color:black" name="daftar">Submit</button>
+                    </div>
                 </form>
           
     </div>
   </div>
 </div> 
+</div>
   
 
   <footer class="footer">
