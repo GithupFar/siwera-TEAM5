@@ -21,42 +21,34 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:100px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
-          <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
+          <li class="nav-item"><a href="../penghuni.php" class="nav-link">Penghuni</a></li>
+          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="../berita.php" class="nav-link">Berita</a></li>
         </ul>
-
-        <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
-                  <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
-                </ul>
-        </div>
       </div>
     </div>
   </nav>
-  <!-- END nav -->
-
-  <div class="site-section bg-light">
+  <!-- END nav -->    
+    <div class="site-section bg-light">
       <div class="container">
         <div class="row mb-5 pt-5 justify-content-center">
             <div class="col-md-7 text-center section-heading">
-              <h2 class="heading">Gedung &amp; Kamar</h2>
+              <h2 class="heading">Gedung &amp; Kamar </h2>
+              <p><a href="tambahgedung.php" class="btn btn-primary py-3 px-2">Tambah</a>
+                <a href="editgedung.php" class="btn btn-primary py-3 px-2">Edit</a></p>
             </div>
-          </div>
         <div class="row">
           <div class="col-lg-4 mb-5">
             <div class="block-34">
@@ -71,6 +63,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi bersama tiap lantai, Wi-Fi, Ruang TV bersama</li>
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -89,6 +82,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi bersama tiap lantai, Wi-Fi, Ruang TV bersama</li>
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -107,6 +101,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi bersama tiap lantai, Wi-Fi, Ruang TV bersama</li>
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -125,6 +120,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi bersama tiap lantai, Wi-Fi, Ruang TV bersama</li>
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -143,6 +139,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi bersama tiap lantai, Wi-Fi, Ruang TV bersama</li>
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -161,6 +158,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi dalam, Wi-Fi, ruang belajar, ruang TV bersama, Lobby</li>
                   <li><strong>Ukuran:</strong> 3,6 x 6 meter</li>
                   <li><strong>Tipe:</strong> Twin Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -179,6 +177,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi dalam, Wi-Fi, ruang belajar, ruang TV bersama, Lobby</li>
                   <li><strong>Ukuran:</strong> 3,6 x 6 meter</li>
                   <li><strong>Tipe:</strong> Twin Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -197,6 +196,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi dalam, Wi-Fi, ruang belajar, ruang TV bersama, Lobby</li>
                   <li><strong>Ukuran:</strong> 3,6 x 6 meter</li>
                   <li><strong>Tipe:</strong> Twin Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -215,6 +215,7 @@
                   <li><strong>Facilities:</strong> Kamar mandi dalam, Wi-Fi, ruang belajar, ruang TV bersama, Lobby</li>
                   <li><strong>Ukuran:</strong> 3,6 x 6 meter</li>
                   <li><strong>Tipe:</strong> Twin Blok</li>
+                  <button type="delete" class="btn btn-info" style="color:red">Delete</button>
                 </ul>
               </div>
             </div>
@@ -223,7 +224,6 @@
         </div>
       </div>
     </div>
-  </div>
 </div>
 
   <footer class="footer">

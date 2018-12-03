@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
+    <!--  -->
     
  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
@@ -42,6 +43,8 @@
     </div>
   </nav>
   <!-- END nav -->
+<!--  -->
+<!--  -->
 
   <div class="block-30 block-30-sm item">
     <div class="site-section bg-light">
@@ -73,7 +76,7 @@
           </p>
     </div>
   </footer>
-<!--  -->
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

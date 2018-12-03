@@ -1,9 +1,3 @@
-<?php
-  session_start();
-    if (!isset($_SESSION['sudahLogin'])) {
-        header("location:../registrasi.php");
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,67 +32,72 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item active"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
-          <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
+          <li class="nav-item"><a href="../penghuni.php" class="nav-link">Penghuni</a></li>
+          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="../berita.php" class="nav-link">Berita</a></li>
         </ul>
-        <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
-                  <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
-                </ul>
-            </div>
       </div>
     </div>
   </nav>
   <!-- END nav -->
-
-<div class="block-30 ">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100">  
-        <form action="bayar_action.php" method="post">
-          <div class="card" style="width: 800px">
-              <div class="card border-info rounded-7">
-                <div class="card-header p-0">
-                  <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Cek Pembayaran</h3>
-                  </div>
-                </div>
-                <div class="card-body p-3">
-                  <div class="form-group">
-                      <label for="kbooking">Kode Booking</label>
-                      <div class="input-group mb-2">
-                        <input type="text" class="form-control" id="kbooking" placeholder="xxx-xxx-xxx" name="kbooking" required>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-                </div>
-              </div>
+  
+  <div class="block-30" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 item" style="background-image: url('../images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Selamat Datang</span>
+              <h2 class="heading">SI Website Asrama ITS</h2>
+              <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+              <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
+              <a href="kelolacontact.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
+              <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
             </div>
-          </form>
-
-              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                  crossorigin="anonymous"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                  crossorigin="anonymous"></script>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('../images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Selamat Datang</span>
+              <h2 class="heading">SI Website Asrama ITS</h2>
+              <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+              <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
+              <a href="kelolakontak.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
+              <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('../images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Selamat Datang</span>
+              <h2 class="heading">SI Website Asrama ITS</h2>
+                  <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+                  <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
+                  <a href="kelolakontak.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
+                  <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-  <footer class="footer">
-    <div class="container" style="bottom:0;">
+  <!--footer class="footer">
+    <div class="container">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
     </div>
-  </footer>
-
+  </footer-->
+  
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

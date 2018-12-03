@@ -1,10 +1,3 @@
-<?php
-  session_start();
-    if (!isset($_SESSION['sudahLogin'])) {
-        header("location:../registrasi.php");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,74 +18,82 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:100px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item active"><a href="pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
-          <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item active"><a href="../index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
+          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="../pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
         </ul>
-        <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
-                  <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
-                </ul>
-            </div>
       </div>
     </div>
   </nav>
   <!-- END nav -->
 
-<div class="block-30 ">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100">  
-        <form action="bayar_action.php" method="post">
-          <div class="card" style="width: 800px">
-              <div class="card border-info rounded-7">
+<div class="block-30 block-30-sm item">
+      <div class="d-flex align-items-center flex-column justify-content-center h-100">
+        <div class="card" style="width: 800px;">
+          <div class="card border border-light rounded-7">
                 <div class="card-header p-0">
                   <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Cek Pembayaran</h3>
+                    <h3 style="color:white;">Data Gedung</h3>
                   </div>
                 </div>
-                <div class="card-body p-3">
-                  <div class="form-group">
-                      <label for="kbooking">Kode Booking</label>
-                      <div class="input-group mb-2">
-                        <input type="text" class="form-control" id="kbooking" placeholder="xxx-xxx-xxx" name="kbooking" required>
-                      </div>
-                  </div>
+          
+          <form action="tambahkamar_action.php" method="post">
+            <div class="card-body p-3">
+              <div class="form-row">
+                <div class="col">
+                  <label for="gedung">Gedung</label>
+                  <input class="form-control" type="text" placeholder="ex: A" id="gedung">
                 </div>
-
-                <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
+                <div class="col">
+                  <label for="kamar" >Kamar</label>
+                  <input class="form-control" type="text" placeholder="ex : Single, Double" id="kamar" required>
                 </div>
               </div>
+              <div class="form-row">
+                <div class="col">
+                  <label for="kuota">Kuota</label>
+                  <input class="form-control" type="text" placeholder="ex : 80" id="kuota" required>
+                </div>
+                <div class="col">
+                  <label for="harga">Harga</label>
+                  <input class="form-control" type="text" placeholder="ex : 2000000" id="harga" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="deskamar">Deskripsi</label>
+                <input class="form-control" type="text" placeholder="ex: Gedung Putra/Putri, Fasilitas Kamar" id="deskamar" required>
+              </div>
             </div>
-          </form>
 
-              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                  crossorigin="anonymous"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                  crossorigin="anonymous"></script>
-      </div>
+            <div class="card-footer text-center">
+                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
+              </div>
+          </form>
     </div>
+  </div>
+</div> 
+  
 
   <footer class="footer">
-    <div class="container" style="bottom:0;">
+    <div class="container">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>
