@@ -1,3 +1,4 @@
+<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,54 +35,61 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="../pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
+          <li class="nav-item"><a href="tambah.php" class="nav-link">Tambah Data</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- END nav -->
-
-<div class="block-30 block-30-sm item">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <div class="card" style="width: 800px;">
-          <div class="card border border-light rounded-7">
-                <div class="card-header p-0">
-                  <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Data Berita</h3>
+  <div class="block-30 block-30-sm item">
+        <div class="d-flex align-items-center flex-column justify-content-center h-100">
+          <div class="card" style="width: 800px;">
+            <div class="card border border-light rounded-7">
+                  <div class="card-header p-0">
+                    <div class="bg-info text-white text-center py-2">
+                      <h3 style="color:white;">Data Keuangan</h3>
+                    </div>
                   </div>
-                </div>
-          
-          <form action="tambahberita_action.php" method="post">
-            <div class="card-body p-3">
-              <div class="form-row">
-                <label for="gedung">Judul Berita</label>
-                <input class="form-control" type="text" placeholder="ex: Welcome Party" id="gedung">
-              </div>
-              <div class="form-row">
-                <label for="desberita">Deskripsi Berita</label>
-                <input class="form-control" type="text" id="deskamar" required>
-              </div>
-              <label>Unggah Foto</label>
-                <div>
+                  
+                  <!--  -->
+                    <table border="1">
+                      <thead>
+                        <tr>
+                          <th>ID Pembayaran</th>
+                          <th>ID Pemesanan</th>
+                          <th>NRP Pemesan</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        $sql = "SELECT * FROM data_keuangan";
+                        $query = mysqli_query($db, $sql);
 
-                </div>
-                <input name='file' type='file' required="required" />
-            </div>
+                            while($bayar = mysqli_fetch_array($query)){
+                                echo "<tr>";
 
+                                echo "<td>".$bayar['pb_id']."</td>";
+                                echo "<td>".$bayar['pm_id']."</td>";
+                                echo "<td>".$bayar['p_nrp']."</td>";
+                                echo "<td>".$bayar['pb_status']."</td>";
 
-            <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-              </div>
-          </form>
+                                echo "<td>";
+                                echo "<a href='form-edit.php?id=".$bayar['pb_id']."'>Edit</a> | ";
+                                echo "<a href='hapus.php?id=".$bayar['pb_id']."'>Hapus</a>";
+                                echo "</td>";
+
+                                echo "</tr>";
+                            }
+                        ?>
+                      </tbody>
+                    </table>
+                    <p>Total : <?php echo mysqli_num_rows($query) ?></p>
+            
+      </div>
     </div>
+  </div> 
   </div>
-</div> 
   
-
   <footer class="footer">
     <div class="container">
           <p>
@@ -89,11 +97,6 @@
           </p>
     </div>
   </footer>
-<<<<<<< HEAD:only-ca&penghuni/peta.php
-<!--  -->
-=======
-
->>>>>>> master:onlyadmin/tambahberita.php
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

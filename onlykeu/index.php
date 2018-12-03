@@ -34,53 +34,29 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="../pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
+          <li class="nav-item"><a href="tambah.php" class="nav-link">Tambah Data</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- END nav -->
 
-<div class="block-30 block-30-sm item">
-      <div class="d-flex align-items-center flex-column justify-content-center h-100">
-        <div class="card" style="width: 800px;">
-          <div class="card border border-light rounded-7">
-                <div class="card-header p-0">
-                  <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Data Berita</h3>
-                  </div>
-                </div>
-          
-          <form action="tambahberita_action.php" method="post">
-            <div class="card-body p-3">
-              <div class="form-row">
-                <label for="gedung">Judul Berita</label>
-                <input class="form-control" type="text" placeholder="ex: Welcome Party" id="gedung">
-              </div>
-              <div class="form-row">
-                <label for="desberita">Deskripsi Berita</label>
-                <input class="form-control" type="text" id="deskamar" required>
-              </div>
-              <label>Unggah Foto</label>
-                <div>
-
-                </div>
-                <input name='file' type='file' required="required" />
+<div class="block-30" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 item" style="background-image: url('../img-its/logo-asrama.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Selamat Datang</span>
+              <h2 class="heading">SI Website Asrama ITS</h2>
+              <p><a href="list.php" class="btn py-3 px-3 btn-primary">Kelola Keuangan</a></p>
             </div>
+          </div>
+        </div>
+      </div>
 
-
-            <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-              </div>
-          </form>
     </div>
   </div>
-</div> 
-  
 
   <footer class="footer">
     <div class="container">
@@ -89,11 +65,6 @@
           </p>
     </div>
   </footer>
-<<<<<<< HEAD:only-ca&penghuni/peta.php
-<!--  -->
-=======
-
->>>>>>> master:onlyadmin/tambahberita.php
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

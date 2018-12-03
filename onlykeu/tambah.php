@@ -32,14 +32,6 @@
         <span class="oi oi-menu"></span> Menu
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="../pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
-        </ul>
-      </div>
     </div>
   </nav>
   <!-- END nav -->
@@ -50,36 +42,35 @@
           <div class="card border border-light rounded-7">
                 <div class="card-header p-0">
                   <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Data Berita</h3>
+                    <h3 style="color:white;">Tambah Data</h3>
                   </div>
                 </div>
+                
+                <form action="proses-pendaftaran.php" method="POST">
+                  <div class="card-body p-3">
+                    <div class="form-row">
+                      <label for="pm_id">ID Pemesanan</label>
+                      <input class="form-control" type="text" name="pm_id">
+                    </div>
+                    <div class="form-row">
+                      <label for="p_nrp">NRP Pemesanan</label>
+                      <input class="form-control" type="text" name="p_nrp">
+                    </div>
+                    <div class="form-row">
+                      <label for="pb_status">Status Pembayaran</label>
+                      <input class="form-control" type="text" name="pb_status">
+                    </div>
+                  </div>
+                    <div class="card-footer text-center">
+                      <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
+                      <button type="submit" class="btn btn-info" style="color:black" name="daftar">Submit</button>
+                    </div>
+                </form>
           
-          <form action="tambahberita_action.php" method="post">
-            <div class="card-body p-3">
-              <div class="form-row">
-                <label for="gedung">Judul Berita</label>
-                <input class="form-control" type="text" placeholder="ex: Welcome Party" id="gedung">
-              </div>
-              <div class="form-row">
-                <label for="desberita">Deskripsi Berita</label>
-                <input class="form-control" type="text" id="deskamar" required>
-              </div>
-              <label>Unggah Foto</label>
-                <div>
-
-                </div>
-                <input name='file' type='file' required="required" />
-            </div>
-
-
-            <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-              </div>
-          </form>
     </div>
   </div>
 </div> 
+</div>
   
 
   <footer class="footer">
@@ -89,11 +80,7 @@
           </p>
     </div>
   </footer>
-<<<<<<< HEAD:only-ca&penghuni/peta.php
-<!--  -->
-=======
 
->>>>>>> master:onlyadmin/tambahberita.php
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

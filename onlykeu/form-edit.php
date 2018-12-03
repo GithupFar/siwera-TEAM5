@@ -1,3 +1,19 @@
+<?php include("config.php");
+
+if (!isset($_GET['pb_id'])) {
+	header('Location: list.php');
+}
+
+$pb_id = $_GET['pb_id'];
+
+$sql = "SELECT * FROM data_keuangan WHERE pb_id=$pb_id";
+$query = mysqli_query($db, $sql);
+$bayar = mysqli_fetch_assoc($query);
+
+if (mysqli_num_rows($query) < 1) {
+	die("data tidak ditemukan ...");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,14 +48,6 @@
         <span class="oi oi-menu"></span> Menu
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="../gedung.php" class="nav-link">Gedung</a></li>
-          <li class="nav-item"><a href="../contact.php" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="../pembayaran.php" class="nav-link">Cek Pembayaran</a></li>
-        </ul>
-      </div>
     </div>
   </nav>
   <!-- END nav -->
@@ -50,33 +58,36 @@
           <div class="card border border-light rounded-7">
                 <div class="card-header p-0">
                   <div class="bg-info text-white text-center py-2">
-                    <h3 style="color:white;">Data Berita</h3>
+                    
                   </div>
                 </div>
+                
+                <form action="proses-edit.php" method="POST">
+                  <fieldset>
+                  	<input type="hidden" name="pb_id" value="<?php echo $bayar['pb_id'] ?>">
+                    <!-- <p>
+                      <label for="pb_id">ID Pembayaran: </label>
+                      <input type="text" name="pb_id" />
+                    </p> -->
+                    <p>
+                      <label for="pm_id">ID Pemesanan : </label>
+                     	<input type="text" name="pm_id" value="<?php echo $bayar['pm_id']?>">
+                    </p>
+                    <p>
+                      <label for="p_nrp">NRP Pemesanan: </label>
+                      <input type="text" name="p_nrp" value="<?php echo $bayar['p_nrp']?>">
+                    </p>
+                    <p>
+                      <label for="pb_status">Status Pembayaran: </label>
+                      <input type="text" name="pb_status" value="<?php echo $bayar['pb_status']?>">
+                    </p>
+                    <p>
+                      <input type="submit" value="Simpan" name="simpan">
+                    </p>
+                  </fieldset>
+
+                </form>
           
-          <form action="tambahberita_action.php" method="post">
-            <div class="card-body p-3">
-              <div class="form-row">
-                <label for="gedung">Judul Berita</label>
-                <input class="form-control" type="text" placeholder="ex: Welcome Party" id="gedung">
-              </div>
-              <div class="form-row">
-                <label for="desberita">Deskripsi Berita</label>
-                <input class="form-control" type="text" id="deskamar" required>
-              </div>
-              <label>Unggah Foto</label>
-                <div>
-
-                </div>
-                <input name='file' type='file' required="required" />
-            </div>
-
-
-            <div class="card-footer text-center">
-                  <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
-              </div>
-          </form>
     </div>
   </div>
 </div> 
@@ -89,11 +100,7 @@
           </p>
     </div>
   </footer>
-<<<<<<< HEAD:only-ca&penghuni/peta.php
-<!--  -->
-=======
 
->>>>>>> master:onlyadmin/tambahberita.php
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
