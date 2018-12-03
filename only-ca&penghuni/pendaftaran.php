@@ -96,6 +96,10 @@
                 <label for="address">Alamat</label>
                 <input class="form-control" type="address" placeholder="ex : Jl. Teknik Kimia No.9" id="address" required>
               </div>
+              <div class="form-row">
+                <label for="address">Tipe Kamar</label>
+                <input class="form-control" type="text" placeholder="ex: Single" id="tipeKamar" required>
+              </div>
             </div>
 
             <div class="card-footer text-center">
