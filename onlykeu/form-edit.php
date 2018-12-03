@@ -1,7 +1,7 @@
 <?php include("config.php");
 
 if (!isset($_GET['pb_id'])) {
-	header('Location: index.php');
+	header('Location: list.php');
 }
 
 $pb_id = $_GET['pb_id'];
