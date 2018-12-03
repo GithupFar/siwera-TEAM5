@@ -53,7 +53,6 @@
               <h2 class="heading">SI Website Asrama ITS</h2>
               <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
               <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
-              <a href="kelolacontact.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
               <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
             </div>
           </div>
@@ -67,7 +66,6 @@
               <h2 class="heading">SI Website Asrama ITS</h2>
               <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
               <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
-              <a href="kelolakontak.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
               <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
             </div>
           </div>
@@ -81,7 +79,6 @@
               <h2 class="heading">SI Website Asrama ITS</h2>
                   <p><a href="kelolagedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
                   <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
-                  <a href="kelolakontak.php" class="btn py-3 px-3 btn-primary">Kelola Kontak</a>
                   <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a></p>
             </div>
           </div>
