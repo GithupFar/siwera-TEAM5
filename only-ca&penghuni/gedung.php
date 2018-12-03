@@ -61,10 +61,10 @@
           <div class="col-lg-4 mb-5">
             <div class="block-34">
               <div class="image">
-                <a href="#"><img src="../images/single.jpg" alt="Image placeholder"></a>
+                <a data-toggle="modal" data-target="gedungA"><img src="../images/single.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2>Gedung A</h2>
+                <h2 class="heading">Gedung A</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 3</li>
@@ -72,6 +72,78 @@
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
                 </ul>
+              </div>
+              <div class="card-desk">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Lihat Kamar 
+              </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Gedung A</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-header"><h4>Kamar untuk 1 Orang</h4></div>
+                        <div class="card-body">
+                            ...
+                        </div>
+                        <div class="card-footer">
+                            <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-5">
+                      <div class="card">
+                        <div class="card-header"><h4>Kamar untuk 2 Orang</h4></div>
+                        <div class="card-body">
+                            ...
+                        </div>
+                        <div class="card-footer">
+                            <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100"> <br><br></div>
+                    <div class="col mb-5">
+                      <div class="card">
+                        <div class="card-header"><h4>Kamar untuk 4 Orang</h4></div>
+                        <div class="card-body">
+                            ...
+                        </div>
+                        <div class="card-footer">
+                            <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col  mb-5">
+                      <div class="card">
+                        <div class="card-header"><h4>Kamar untuk 4 Orang (BIDIKMISI)</h4></div>
+                        <div class="card-body">
+                            ...
+                        </div>
+                        <div class="card-footer">
+                            <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
@@ -79,10 +151,10 @@
           <div class="col-lg-4 mb-5">
             <div class="block-34">
               <div class="image">
-                <a href="#"><img src="../images/single.jpg" alt="Image placeholder"></a>
+                <a data-toggle="modal" data-target="gedungB"><img src="../images/single.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2>Gedung B</h2>
+                <h2 class="heading">Gedung B</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 3</li>
@@ -90,6 +162,11 @@
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
                 </ul>
+              </div>
+              <div class="card-desk">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Lihat Kamar 
+              </button>
               </div>
             </div>
           </div>
@@ -97,10 +174,10 @@
           <div class="col-lg-4 mb-5">
             <div class="block-34">
               <div class="image">
-                <a href="#"><img src="../images/single.jpg" alt="Image placeholder"></a>
+                <a data-toggle="modal" data-target="gedungC"><img src="../images/single.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2>Gedung C</h2>
+                <h2 class="heading">Gedung C</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 3</li>
@@ -108,6 +185,11 @@
                   <li><strong>Ukuran:</strong> 3,5 x 3 m dan 3,5 x 6 meter</li>
                   <li><strong>Tipe:</strong> Single Blok</li>
                 </ul>
+              </div>
+              <div class="card-desk">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Lihat Kamar 
+              </button>
               </div>
             </div>
           </div>

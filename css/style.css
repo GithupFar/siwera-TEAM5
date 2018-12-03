@@ -2192,9 +2192,9 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .btn-dark {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #343a40; }
+  color: #212529;
+  background-color: #fff;
+  border-color: blue; }
   .btn-dark:hover {
     color: #fff;
     background-color: #23272b;
@@ -2203,12 +2203,12 @@ fieldset:disabled a.btn {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
-    color: #fff;
+    color: #212529;
     background-color: #343a40;
     border-color: #343a40; }
   .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
-    color: #fff;
+    color: #212529;
     background-color: #1d2124;
     border-color: #171a1d; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
@@ -4347,7 +4347,7 @@ button.close {
 
 .modal {
   position: fixed;
-  top: 0;
+  top: 10px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -7508,7 +7508,7 @@ a {
   border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  background: #fff;
+  /*background: #fff;*/
   border-radius: 0;
   border: 2px solid transparent;
   font-size: 14px;
