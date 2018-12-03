@@ -1,3 +1,4 @@
+<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,46 +40,56 @@
       </div>
     </div>
   </nav>
-  <!-- END nav -->
+  <div class="block-30 block-30-sm item">
+        <div class="d-flex align-items-center flex-column justify-content-center h-100">
+          <div class="card" style="width: 800px;">
+            <div class="card border border-light rounded-7">
+                  <div class="card-header p-0">
+                    <div class="bg-info text-white text-center py-2">
+                      <h3 style="color:white;">Data Keuangan</h3>
+                    </div>
+                  </div>
+                  
+                  <!--  -->
+                    <table border="1">
+                      <thead>
+                        <tr>
+                          <th>ID Pembayaran</th>
+                          <th>ID Pemesanan</th>
+                          <th>NRP Pemesan</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        $sql = "SELECT * FROM data_keuangan";
+                        $query = mysqli_query($db, $sql);
 
-<div class="block-30" style="position: relative;">
-    <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 item" style="background-image: url('../images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Selamat Datang</span>
-              <h2 class="heading">SI Website Asrama ITS</h2>
-              <p><a href="list.php" class="btn py-3 px-3 btn-primary">Kelola Keuangan</a>></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block-30 item" style="background-image: url('../images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Selamat Datang</span>
-              <h2 class="heading">SI Website Asrama ITS</h2>
-              <p><a href="list.php" class="btn py-3 px-3 btn-primary">Kelola Keuangan</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block-30 item" style="background-image: url('../images/bg_3.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Selamat Datang</span>
-              <h2 class="heading">SI Website Asrama ITS</h2>
-                  <p><a href="list.php" class="btn py-3 px-3 btn-primary">Kelola Keuangan</a></p>
-            </div>
-          </div>
-        </div>
+                            while($bayar = mysqli_fetch_array($query)){
+                                echo "<tr>";
+
+                                echo "<td>".$bayar['pb_id']."</td>";
+                                echo "<td>".$bayar['pm_id']."</td>";
+                                echo "<td>".$bayar['p_nrp']."</td>";
+                                echo "<td>".$bayar['pb_status']."</td>";
+
+                                echo "<td>";
+                                echo "<a href='form-edit.php?id=".$bayar['pb_id']."'>Edit</a> | ";
+                                echo "<a href='hapus.php?id=".$bayar['pb_id']."'>Hapus</a>";
+                                echo "</td>";
+
+                                echo "</tr>";
+                            }
+                        ?>
+                      </tbody>
+                    </table>
+                    <p>Total : <?php echo mysqli_num_rows($query) ?></p>
+            
       </div>
     </div>
+  </div> 
   </div>
-
+  
   <footer class="footer">
     <div class="container">
           <p>

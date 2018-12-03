@@ -10,7 +10,7 @@ if(isset($_POST['simpan'])){
 
 	if($query)
 	{
-		header('Location: index.php');
+		header('Location: list.php');
 	}
 	else{
 		die("Gagal menyimpan perubahan...");
