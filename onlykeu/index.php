@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
   </head>
   <body>
     
@@ -58,11 +58,9 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-          <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
-          </p>
+  <footer class="page-footer">
+    <div class="footer-copyright text-center py-3">
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5</p>
     </div>
   </footer>
   <!-- loader -->

@@ -57,6 +57,10 @@
                       <input class="form-control" type="text" name="p_nrp">
                     </div>
                     <div class="form-row">
+                      <label for="pb_status">Jumlah Cicilan(jika ada)</label>
+                      <input class="form-control" type="text" name="pb_status">
+                    </div>
+                    <div class="form-row">
                       <label for="pb_status">Status Pembayaran</label>
                       <input class="form-control" type="text" name="pb_status">
                     </div>
