@@ -137,7 +137,7 @@
 </style>
 </head>
 <body>
-    <nav class="navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+    <!-- <nav class="navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php">
       <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
@@ -145,17 +145,44 @@
         <span class="oi oi-menu"></span> Menu
       </button>
     </div>
-  </nav>
+  </nav> -->
   	<!--  -->
   	<div class="block-30" style="position: relative;">
     <!-- <div class="owl-carousel loop-block-31 "> -->
     	<!-- <div class="block-30 item" data-stellar-background-ratio="0.5"> -->
         	<div class="container">
           		<div class="row align-items-center">
-            		<div class="col-md-10">
+            		<div class="col-sm-12">
               			<span class="subheading-sm">Selamat Datang</span>
-              			<h2>Admin Keuangan</h2>
-              			<a href="#myModal" class="trigger-btn btn py-3 px-3 btn-primary" data-toggle="modal">Login</a>
+              			<h1 style="color: white">Admin Keuangan</h1>
+              			<div class="modal-dialog modal-login">
+							<div class="modal-content">
+								<div class="modal-header">				
+									<h4 class="modal-title">Login</h4>
+								</div>
+								<div class="modal-body">
+									<form action="list.php" method="post">
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+												<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+												<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+											</div>
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn btn-block btn-lg" style="background-color: #435d7d; color: white">Login</button>
+										</div>
+										<!-- <p class="hint-text"><a href="#">Forgot Password?</a></p> -->
+									</form>
+								</div>
+								<!-- <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div> -->
+							</div>
+						</div>
             		</div>
           		</div>
         	</div>
@@ -170,11 +197,11 @@
 	</div> -->
 
 	<!-- Modal HTML -->
-	<div id="myModal" class="modal fade">
+<!-- 	<div id="myModal" class="modal fade">
 		<div class="modal-dialog modal-login">
 			<div class="modal-content">
 				<div class="modal-header">				
-					<h4 class="modal-title">Sign In</h4>
+					<h4 class="modal-title">Login</h4>
 	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
@@ -194,19 +221,19 @@
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
 						</div>
-						<p class="hint-text"><a href="#">Forgot Password?</a></p>
+						<!-- <p class="hint-text"><a href="#">Forgot Password?</a></p> -->
 					</form>
 				</div>
-				<div class="modal-footer">Don't have an account? <a href="#">Create one</a></div>
+				<!-- <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div> -->
 			</div>
 		</div>
-	</div>     
+	</div>      -->
 
-	<footer class="page-footer">
+	<!-- <footer class="page-footer">
     	<div class="footer-copyright text-center py-3">
         	<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5</p>
     	</div>
-    </footer>
+    </footer> -->
 
   	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

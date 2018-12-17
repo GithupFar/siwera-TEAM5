@@ -1,268 +1,506 @@
-<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SIWERA - SI Website Asrama</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/aos.css">
-    <link rel="stylesheet" href="../css/ionicons.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../css/jquery.timepicker.css">
-    <link rel="stylesheet" href="../css/flaticon.css">
-    <link rel="stylesheet" href="../css/icomoon.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.php">
-      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="tambah.php" class="nav-link">Tambah Data</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!--   <div class="block-30 block-30-sm item">
-        <div class="d-flex align-items-center flex-column justify-content-center h-100">
-          <div class="card" style="width: 800px;">
-            <div class="card border border-light rounded-7">
-                  <div class="card-header p-0">
-                    <div class="bg-info text-white text-center py-2">
-                      <h3 style="color:white;">Data Keuangan</h3>
-                    </div>
-                  </div>
-                   -->
-                  <!--  -->
-                    <!-- <table border="1">
-                      <thead>
-                        <tr>
-                          <th>ID Pembayaran</th>
-                          <th>ID Pemesanan</th>
-                          <th>NRP Pemesan</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody> -->
-                        <!-- <?php
-                        //$sql = "SELECT * FROM data_keuangan";
-                        //$query = mysqli_query($db, $sql);
-
-                          //  while($bayar = mysqli_fetch_array($query)){
-                            //    echo "<tr>";
-
-                              //  echo "<td>".$bayar['pb_id']."</td>";
-                                //echo "<td>".$bayar['pm_id']."</td>";
-                                //echo "<td>".$bayar['p_nrp']."</td>";
-                                //echo "<td>".$bayar['pb_status']."</td>";
-
-                                //echo "<td>";
-                                //echo "<a href='form-edit.php?id=".$bayar['pb_id']."'>Edit</a> | ";
-                                //echo "<a href='hapus.php?id=".$bayar['pb_id']."'>Hapus</a>";
-                                //echo "</td>";
-
-                                //echo "</tr>";
-                            //}
-                        ?> -->
-<!--                       </tbody>
-                    </table>
-                    <p>Total : <?php //echo mysqli_num_rows($query) ?></p>
-            
-      </div>
-    </div>
-  </div> 
-  </div> -->
-  <!-- TABLE BARU -->
-  <!-- <div class="container"> -->
-    <!-- <div class="row"> -->
-  <div class="block-30 block-30-sm item">
-    <div class="d-flex align-items-center flex-column justify-content-center h-100">
-      <div class="card" style="width: 800px;">
-        <div class="card border border-light rounded-7">
-          <div class="card-header p-0">
-            <div class="bg-info text-dark text-center py-2">
-              <h1 class="d-flex align-items-center flex-column justify-content-center h-100">Data Keuangan</h1>
-            </div>
-          <!-- <div class="col-md-12"> -->
-            <!-- <h4>Bootstrap Snipp for Datatable</h4> -->
-            <div class="table-responsive">
-              <table class="table">
-                         
-                <thead class="thead bg-info">         
-                  <th>PB_ID</th>
-                  <th>PM_ID</th>
-                  <th>Nama</th>
-                  <th>NRP</th>
-                  <th>Jumlah Cicilan</th>
-                  <th>Status</th>
-                  <th>Edit</th>                  
-                  <!-- <th>Delete</th> -->
-                </thead>
-              
-                <tbody>
-                  <tr>
-                  <td>PB_001</td>
-                  <td>PM_001</td>
-                  <td>Angel</td>
-                  <td>3218100121</td>
-                  <td>Cicilan Ke-1(Rp.950.000)</td>
-                  <td>Belum Lunas</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                  <!-- <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td> -->
-                  </tr>
-                  
-                  <tr>
-                  <td>PB_002</td>
-                  <td>PM_002</td>
-                  <td>Jacob</td>
-                  <td>2218100080</td>
-                  <td>-</td>
-                  <td>Lunas</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                  <!-- <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td> -->
-                  </tr>
-                  
-                  
-                  <tr>
-                  <td>PB_003</td>
-                  <td>PM_003</td>
-                  <td>Mark</td>
-                  <td>2818100121</td>
-                  <td>Cicilan Ke-3(Rp.2.850.000)</td>
-                  <td>Belum Lunas</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                  <!-- <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td> -->
-                  </tr>
-                  
-                  
-                  
-                  <tr>
-                  <td>PB_004</td>
-                  <td>PM_004</td>
-                  <td>Jonny</td>
-                  <td>3418100092</td>
-                  <td>Cicilan Ke-2(Rp.1.900.000)</td>
-                  <td>Belum Lunas</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                  <!-- <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td> -->
-                  </tr>
-                  
-                  
-                  <tr>
-                  <td>PB_005</td>
-                  <td>PM_005</td>
-                  <td>Jennie</td>
-                  <td>12181000026</td>
-                  <td>-</td>
-                  <td>Lunas</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                  <!-- <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td> -->
-                  </tr>
-            
-                </tbody>
-              
-              </table>
-
-              <!-- <div class="clearfix"></div> -->
-            <!-- <button type="button" class="btn btn-xs" data-title="Download">Unduh Laporan <span class="glyphicon glyphicon-download-alt"></span></button>
- -->
-            <p><a href="#" class="btn py-3 px-2 btn-primary">Unduh Laporan </a><span class="glyphicon glyphicon-download-alt"></span></p>
-
-              <ul class="pagination pull-right">
-                <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-              </ul>
-                              
-            </div>
-                  
-        </div>
-      </div>
-    </div>
-  </div>
-<!--  -->
-
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-          <h4 class="modal-title custom_align" id="Heading"></h4>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <input class="form-control " type="text" placeholder="Angel">
-        </div>
-        <div class="form-group">
-          <input class="form-control " type="text" placeholder="3218100121">
-        </div>
-        <div class="form-group">
-          <!-- <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea> -->
-          <p>
-          <label for="cicilan">Cicilan : </label>
-          <select name="cicilan">
-            <option>Cicilan Ke-1</option>
-            <option>Cicilan Ke-2</option>
-            <option>Cicilan Ke-3</option>
-            <option>Cicilan Ke-4</option>
-          </select>  
-        </p>
-        </div>
-      </div>
-      <div class="modal-footer ">
-        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
-      </div>
-    </div>
-      <!-- /.modal-content --> 
-  </div>
-      <!-- /.modal-dialog --> 
-</div>
-    
-    
-    
-    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-          <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <h4 class="modal-title custom_align" id="Heading"></h4>
-      </div>
-          <div class="modal-body">
-       
-       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
-       
-      </div>
-        <div class="modal-footer ">
-        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
-      </div>
-        </div>
-    <!-- /.modal-content --> 
-  </div>
-      <!-- /.modal-dialog --> 
-    </div>
-
-
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIWERA - SI Website Asrama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    body {
+        color: #566787;
+    background: #f5f5f5;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+  }
+  .table-wrapper {
+        background: #fff;
+        padding: 20px 25px;
+        margin: 30px 0;
+    border-radius: 3px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    }
+  .table-title {        
+    padding-bottom: 15px;
+    background: #435d7d;
+    color: #fff;
+    padding: 16px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+    }
+    .table-title h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+  }
+  .table-title .btn-group {
+    float: right;
+  }
+  .table-title .btn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    border: none;
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+  }
+  .table-title .btn i {
+    float: left;
+    font-size: 21px;
+    margin-right: 5px;
+  }
+  .table-title .btn span {
+    float: left;
+    margin-top: 2px;
+  }
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    padding: 12px 15px;
+    vertical-align: middle;
+    }
+  table.table tr th:first-child {
+    width: 60px;
+  }
+  table.table tr th:last-child {
+    width: 100px;
+  }
+    table.table-striped tbody tr:nth-of-type(odd) {
+      background-color: #fcfcfc;
+  }
+  table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+  }
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    } 
+    table.table td:last-child i {
+    opacity: 0.9;
+    font-size: 22px;
+        margin: 0 5px;
+    }
+  table.table td a {
+    font-weight: bold;
+    color: #566787;
+    display: inline-block;
+    text-decoration: none;
+    outline: none !important;
+  }
+  table.table td a:hover {
+    color: #2196F3;
+  }
+  table.table td a.edit {
+        color: #FFC107;
+    }
+    table.table td a.delete {
+        color: #F44336;
+    }
+    table.table td i {
+        font-size: 19px;
+    }
+  table.table .avatar {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+    .pagination {
+        float: right;
+        margin: 0 0 5px;
+    }
+    .pagination li a {
+        border: none;
+        font-size: 13px;
+        min-width: 30px;
+        min-height: 30px;
+        color: #999;
+        margin: 0 2px;
+        line-height: 30px;
+        border-radius: 2px !important;
+        text-align: center;
+        padding: 0 6px;
+    }
+    .pagination li a:hover {
+        color: #666;
+    } 
+    .pagination li.active a, .pagination li.active a.page-link {
+        background: #03A9F4;
+    }
+    .pagination li.active a:hover {        
+        background: #0397d6;
+    }
+  .pagination li.disabled i {
+        color: #ccc;
+    }
+    .pagination li i {
+        font-size: 16px;
+        padding-top: 6px
+    }
+    .hint-text {
+        float: left;
+        margin-top: 10px;
+        font-size: 13px;
+    }    
+  /* Custom checkbox */
+  .custom-checkbox {
+    position: relative;
+  }
+  .custom-checkbox input[type="checkbox"] {    
+    opacity: 0;
+    position: absolute;
+    margin: 5px 0 0 3px;
+    z-index: 9;
+  }
+  .custom-checkbox label:before{
+    width: 18px;
+    height: 18px;
+  }
+  .custom-checkbox label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: white;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .custom-checkbox input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: inherit;
+    z-index: 3;
+    transform: rotateZ(45deg);
+  }
+  .custom-checkbox input[type="checkbox"]:checked + label:before {
+    border-color: #03A9F4;
+    background: #03A9F4;
+  }
+  .custom-checkbox input[type="checkbox"]:checked + label:after {
+    border-color: #fff;
+  }
+  .custom-checkbox input[type="checkbox"]:disabled + label:before {
+    color: #b8b8b8;
+    cursor: auto;
+    box-shadow: none;
+    background: #ddd;
+  }
+  /* Modal styles */
+  .modal .modal-dialog {
+    max-width: 400px;
+  }
+  .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+  }
+  .modal .modal-content {
+    border-radius: 3px;
+  }
+  .modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+  }
+    .modal .modal-title {
+        display: inline-block;
+    }
+  .modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+  }
+  .modal textarea.form-control {
+    resize: vertical;
+  }
+  .modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+  } 
+  .modal form label {
+    font-weight: normal;
+  } 
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  // Activate tooltip
+  $('[data-toggle="tooltip"]').tooltip();
   
+  // Select/Deselect checkboxes
+  var checkbox = $('table tbody input[type="checkbox"]');
+  $("#selectAll").click(function(){
+    if(this.checked){
+      checkbox.each(function(){
+        this.checked = true;                        
+      });
+    } else{
+      checkbox.each(function(){
+        this.checked = false;                        
+      });
+    } 
+  });
+  checkbox.click(function(){
+    if(!this.checked){
+      $("#selectAll").prop("checked", false);
+    }
+  });
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                       <h2>Data <b>Keuangan</b></h2>
+                    </div>
+          <div class="col-sm-6">
+            <a href="#addEmployeeModal" class="btn btn-warning" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Tambah Data</span></a>
+            <a href="#" class="btn btn-warning" data-toggle="modal"><i class="glyphicon glyphicon-download"></i> <span>Export</span></a>            
+          </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+            <th>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="selectAll">
+                <label for="selectAll"></label>
+              </span>
+            </th>
+                        <th>PB_ID</th>
+                        <th>PM_ID</th>
+                        <th>Nama</th>
+                        <th>NRP</th>
+                        <th>Jumlah Cicilan</th>
+                        <th>Status</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+            <td>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                <label for="checkbox1"></label>
+              </span>
+            </td>
+                        <td>PB_001</td>
+                        <td>PM_001</td>
+                        <td>Angel</td>
+                        <td>3218100121</td>
+                        <td>Cicilan Ke-1(Rp.950.000)</td>
+                        <td>Belum Lunas</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <!-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                        </td>
+                    </tr>
+                    <tr>
+            <td>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                <label for="checkbox2"></label>
+              </span>
+            </td>
+                          <td>PB_002</td>
+                          <td>PM_002</td>
+                          <td>Jacob</td>
+                          <td>2218100080</td>
+                          <td>-</td>
+                          <td>Lunas</td>
+                          <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <!-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                        </td>
+                    </tr>
+          <tr>
+            <td>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                <label for="checkbox3"></label>
+              </span>
+            </td>
+                        <td>PB_003</td>
+                        <td>PM_003</td>
+                        <td>Mark</td>
+                        <td>2818100121</td>
+                        <td>Cicilan Ke-3(Rp.2.850.000)</td>
+                        <td>Belum Lunas</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <!-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                        </td>
+                    </tr>
+                    <tr>
+            <td>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                <label for="checkbox4"></label>
+              </span>
+            </td>
+                        <td>PB_004</td>
+                        <td>PM_004</td>
+                        <td>Jonny</td>
+                        <td>3418100092</td>
+                        <td>Cicilan Ke-2(Rp.1.900.000)</td>
+                        <td>Belum Lunas</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <!-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                        </td>
+                    </tr>         
+          <tr>
+            <td>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                <label for="checkbox5"></label>
+              </span>
+            </td>
+                        <td>PB_005</td>
+                        <td>PM_005</td>
+                        <td>Jennie</td>
+                        <td>12181000026</td>
+                        <td>-</td>
+                        <td>Lunas</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <!-- <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a> -->
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+      <div class="clearfix">
+                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- Edit Modal HTML -->
+  <div id="addEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">            
+            <h4 class="modal-title">Tambah Data</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+            <div class="form-group">
+              <label>ID Pemesanan</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label>NRP Pemesanan</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label>Jumlah Cicilan(jika ada)</label>
+              <select name="cicilan">
+                <option>-</option>
+                <option>Cicilan Ke-1</option>
+                <option>Cicilan Ke-2</option>
+                <option>Cicilan Ke-3</option>
+                <option>Cicilan Ke-4</option>
+              </select> 
+            </div>
+            <div class="form-group">
+              <label>Status Pembayaran</label>
+              <input type="text" class="form-control" required>
+            </div>          
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-success" value="Add">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Edit Modal HTML -->
+  <div id="editEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">            
+            <h4 class="modal-title">Edit Employee</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+            <div class="form-group">
+              <label>ID Pemesanan</label>
+              <input type="text" class="form-control" required placeholder="PM_001">
+            </div>
+            <div class="form-group">
+              <label>NRP Pemesan</label>
+              <input type="text" class="form-control" required placeholder="3218100121">
+            </div>
+            <div class="form-group">
+              <label>Cicilan : </label>
+              <select name="cicilan">
+                <option>-</option>
+                <option>Cicilan Ke-1</option>
+                <option>Cicilan Ke-2</option>
+                <option>Cicilan Ke-3</option>
+                <option>Cicilan Ke-4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Status</label>
+              <input type="text" class="form-control" required>
+            </div>          
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-info" value="Save">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Delete Modal HTML -->
+  <div id="deleteEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">            
+            <h4 class="modal-title">Delete Employee</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+            <p>Are you sure you want to delete these Records?</p>
+            <p class="text-warning"><small>This action cannot be undone.</small></p>
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-danger" value="Delete">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
           <p>
@@ -270,30 +508,5 @@
           </p>
     </div>
   </footer>
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/jquery.easing.1.3.js"></script>
-  <script src="../js/jquery.waypoints.min.js"></script>
-  <script src="../js/jquery.stellar.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/jquery.magnific-popup.min.js"></script>
-  <script src="../js/bootstrap-datepicker.js"></script>
-  
-  <script src="../js/aos.js"></script>
-  <script src="../js/jquery.animateNumber.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="../js/google-map.js"></script>
-  <script src="../js/main.js"></script>
-  
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+</body>
+</html>                                                               
