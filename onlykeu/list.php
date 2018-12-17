@@ -259,6 +259,17 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+      <img class="pull-left" style="max-width:50px; margin-top: -7px;" src="../img-its/logo-its.png">SIWERA</a>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.php">Beranda</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
