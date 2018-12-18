@@ -161,7 +161,7 @@
 									<h4 class="modal-title">Login</h4>
 								</div>
 								<div class="modal-body">
-									<form action="list.php" method="post">
+									<form action="list_keuangan.php" method="post">
 										<div class="form-group">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
