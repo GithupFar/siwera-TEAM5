@@ -77,8 +77,8 @@
                   <input class="form-control" type="text" placeholder="ex : Rudi Hartoyo" id="name" required>
                 </div>
                 <div class="col">
-                  <label for="email">Email</label>
-                  <input class="form-control" type="email" placeholder="ex: email@email.com" id="email">
+                  <label for="NRP">NRP</label>
+                  <input class="form-control" type="text" placeholder="05-1-1-19-4000-0111" id="NRP">
                 </div>
               </div>
               
@@ -88,13 +88,19 @@
                   <input class="form-control" type="Date" id="ttl" required>
                 </div>
                 <div class="col">
-                  <label for="notelp">No.Telp</label>
-                  <input class="form-control" type="notelp" placeholder="ex : 085xxxxxxxxx" id="notelp" required>
+                  <label for="email">Email</label>
+                  <input class="form-control" type="email" placeholder="ex: email@email.com" id="email">
                 </div>
               </div>
               <div class="form-row">
+                <div class="col">
                 <label for="address">Alamat</label>
                 <input class="form-control" type="address" placeholder="ex : Jl. Teknik Kimia No.9" id="address" required>
+                </div>
+                <div class="col">
+                  <label for="notelp">No.Telp</label>
+                  <input class="form-control" type="notelp" placeholder="ex : 085xxxxxxxxx" id="notelp" required>
+                </div>
               </div>
               <div class="form-row">
                 <label for="address">Tipe Kamar</label>

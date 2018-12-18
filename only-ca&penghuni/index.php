@@ -63,7 +63,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-12">
-              <h3 class="heading">Selamat Datang Sari</h3>
+              <h3 class="heading" style="text-align: center;">Selamat Datang</h3>
               <img src="../img-its/logo-asrama.png">
               </div>
             </div>
