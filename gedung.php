@@ -49,7 +49,6 @@
               <h2 class="heading">Gedung &amp; Kamar</h2>
             </div>
           </div>
-
         <div class="row">
           <div class="col-lg-4 mb-5">
             <div class="block-34">
@@ -67,7 +66,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -75,8 +74,8 @@
             </div>
           </div>
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+          <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Gedung A</h5>
@@ -90,16 +89,20 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 1 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 5.500.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 1 Tempat Tidur Susun - 1 Kasur Spring Bed - 1 Lemari Pakaian - 1 Meja Belajar - 1 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
                         </div>
+                        
                       </div>
                     </div>
                     <div class="col mb-5">
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 2 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 4.675.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 1 Tempat Tidur Susun - 2 Kasur Spring Bed - 2 Lemari Pakaian - 2 Meja Belajar - 2 Kursi Belajar - 1 Cermin - Kamar Mandi di dalam Kamar</li>
                         </div>
+                        
                       </div>
                     </div>
                     <div class="w-100"> <br><br></div>
@@ -107,16 +110,20 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 4 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 2.475.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 2 Tempat Tidur Susun - 4 Kasur Spring Bed - 4 Lemari Pakaian - 4 Meja Belajar - 4 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
                         </div>
+                        
                       </div>
                     </div>
                     <div class="col  mb-5">
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 4 Orang (BIDIKMISI)</h4></div>
                         <div class="card-body">
-                            ...
+                          <li><strong>Harga:</strong> Rp 1.925.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 2 Tempat Tidur Susun - 4 Kasur Spring Bed - 4 Lemari Pakaian - 4 Meja Belajar - 4 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
                         </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -128,7 +135,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="col-lg-4 mb-5">
             <div class="block-34">
@@ -146,7 +152,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -169,7 +175,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -182,7 +188,7 @@
                 <a href="#"><img src="images/single.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung D</h2>
+                <h2>Gedung D</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 3</li>
@@ -200,7 +206,7 @@
                 <a href="#"><img src="images/single.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung E</h2>
+                <h2>Gedung E</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putra</strong></li>
                   <li><strong>Lantai:</strong> 3</li>
@@ -218,7 +224,7 @@
                 <a href="#"><img src="images/twin.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung G</h2>
+                <h2>Gedung G</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putra</strong></li>
                   <li><strong>Lantai:</strong> 4</li>
@@ -236,7 +242,7 @@
                 <a href="#"><img src="images/twin.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung H</h2>
+                <h2>Gedung H</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 4</li>
@@ -254,7 +260,7 @@
                 <a href="#"><img src="images/twin.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung I</h2>
+                <h2>Gedung I</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putra</strong></li>
                   <li><strong>Lantai:</strong> 4</li>
@@ -272,7 +278,7 @@
                 <a href="#"><img src="images/twin.jpg" alt="Image placeholder"></a>
               </div>
               <div class="text">
-                <h2 class="heading">Gedung J</h2>
+                <h2>Gedung J</h2>
                 <ul class="specs">
                   <li><strong>Gedung Putri</strong></li>
                   <li><strong>Lantai:</strong> 4</li>
@@ -284,10 +290,13 @@
             </div>
           </div>
 
+        </div>
+      </div>
     </div>
 
+
   <footer class="footer">
-    <div class="container">
+    <div class="container" style="bottom:0;">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by TEAM5
           </p>

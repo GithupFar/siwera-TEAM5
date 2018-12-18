@@ -74,7 +74,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -82,8 +82,9 @@
             </div>
           </div>
 
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+          
+          <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Gedung A</h5>
@@ -97,7 +98,9 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 1 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                            <li><strong>Harga:</strong> Rp 5.500.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 1 Tempat Tidur Susun - 1 Kasur Spring Bed - 1 Lemari Pakaian - 1 Meja Belajar - 1 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
+                            
                         </div>
                         <div class="card-footer">
                             <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
@@ -108,7 +111,8 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 2 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 4.675.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 1 Tempat Tidur Susun - 2 Kasur Spring Bed - 2 Lemari Pakaian - 2 Meja Belajar - 2 Kursi Belajar - 1 Cermin - Kamar Mandi di dalam Kamar</li>
                         </div>
                         <div class="card-footer">
                             <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
@@ -120,7 +124,8 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 4 Orang</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 2.475.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 2 Tempat Tidur Susun - 4 Kasur Spring Bed - 4 Lemari Pakaian - 4 Meja Belajar - 4 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
                         </div>
                         <div class="card-footer">
                             <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
@@ -131,7 +136,8 @@
                       <div class="card">
                         <div class="card-header"><h4>Kamar untuk 4 Orang (BIDIKMISI)</h4></div>
                         <div class="card-body">
-                            ...
+                           <li><strong>Harga:</strong> Rp 1.925.000 per 11 Bulan</li>
+                            <li><strong>Facilities:</strong> 2 Tempat Tidur Susun - 4 Kasur Spring Bed - 4 Lemari Pakaian - 4 Meja Belajar - 4 Kursi Belajar - 1 Cermin - Kamar Mandi Bersama (Share) tiap lantai</li>
                         </div>
                         <div class="card-footer">
                             <a href="pendaftaran.php"><button class="btn-primary" type="button" id="pesankamar">Pesan Kamar</button></a>
@@ -164,7 +170,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -187,7 +193,7 @@
                 </ul>
               </div>
               <div class="card-desk">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
                 Lihat Kamar 
               </button>
               </div>
@@ -305,8 +311,7 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+
 
   <footer class="footer">
     <div class="container" style="bottom:0;">

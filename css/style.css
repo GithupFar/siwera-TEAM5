@@ -7524,9 +7524,9 @@ a {
     border: 2px solid #0088cc;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 2px solid #0088cc;
+      border: 2px solid #1280b7;
       background: transparent;
-      color: white; }
+      color: #000; }
     .btn.btn-primary.btn-outline-primary {
       border: 2px solid #0088cc;
       background: transparent;

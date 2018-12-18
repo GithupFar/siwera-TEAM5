@@ -43,6 +43,7 @@
           <li class="nav-item"><a href="pendaftaran.php" class="nav-link">Pesan Kamar</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Kontak</a></li>
         </ul>
+
         <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #495057b3;"><span class="icon icon-user"></span>
                 <span class="caret"></span></button>
@@ -50,7 +51,7 @@
                   <a href="index.php" class="dropdown-item"><span class="icon icon-home"></span><span class="text">   Beranda </span></a>
                   <a href="logout.php" class="dropdown-item"><span class="icon icon-remove"></span><span class="text">   Keluar </span></a>
                 </ul>
-            </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -58,7 +59,7 @@
 
 <div class="block-30 ">
       <div class="d-flex align-items-center flex-column justify-content-center h-100">  
-        <form action="bayar_action.php" method="post">
+        <form action="" method="post">
           <div class="card" style="width: 800px">
               <div class="card border-info rounded-7">
                 <div class="card-header p-0">
@@ -77,19 +78,81 @@
 
                 <div class="card-footer text-center">
                   <button type="reset" class="btn btn-secondary" style="color:black">Cancel</button>
-                  <button type="submit" class="btn btn-info" style="color:black">Submit</button>
+                  <button type="submit" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg" style="color:black">Submit</button>
                 </div>
-              </div>
-            </div>
-          </form>
 
-              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                  crossorigin="anonymous"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                  crossorigin="anonymous"></script>
-      </div>
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="container">
+                          <div class="table-wrapper">
+                            
+                              <h2 style="text-align: center;"><b>Tagihan </b></h2>
+                            
+                              <table class="table table-striped table-hover">
+                                  <thead>
+                                      <tr>
+                                          <th>No</th>
+                                          <th>Nominal Tagihan</th>
+                                          <th></th>
+                                          <th></th>
+                                          <th>Dekripsi</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Rp 2050.000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Tagihan pelunasan biaya operasional kamar</td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+
+                              <h2 style="text-align: center;">Riwayat <b>Pembayaran</b></h2>
+                              <table class="table table-striped table-hover">
+                                  <thead>
+                                      <tr>
+                                          <th></th>
+                                          <th>No</th>
+                                          <th>Nominal Bayar</th>
+                                          <th>Tanggal Pelunasan</th>
+                                          <th>Deskripsi</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>Rp 3000.000</td>
+                                    <td>10/12/2017</td>
+                                    <td>Pelunasan biaya operasional kamar</td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>Rp 950.000</td>
+                                    <td>10/12/2018</td>
+                                    <td>Cicilan Ke-1(Rp.950.000)</td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                                    crossorigin="anonymous"></script>
     </div>
+  </div>
 
   <footer class="footer">
     <div class="container" style="bottom:0;">
