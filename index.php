@@ -43,7 +43,7 @@
   
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
-      <div class="block-30" style="background-image: url('');" data-stellar-background-ratio="0.5">
+      <div class="block-30" style="background-color: white;" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-12">

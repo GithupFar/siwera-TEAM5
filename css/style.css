@@ -3551,7 +3551,7 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
-  color: #fff; }
+  color: #0d0c0c; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
 
@@ -7274,7 +7274,7 @@ a {
   color: #0088cc !important; }
 
 .ftco-navbar-light {
-  background: #4950577d !important;
+  background: #f8f9fa !important;
   position: fixed;
   left: 0;
   right: 0;
@@ -7291,7 +7291,7 @@ a {
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
+    color: #2b355d;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #fff; }
@@ -7331,12 +7331,12 @@ a {
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #fff;
+    color: #2b355d;
     position: relative; }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
       content: "";
       height: 2px;
-      background: #ccc;
+      background: #2b355d;
       left: 20px;
       right: 20px;
       position: absolute;
@@ -8520,11 +8520,11 @@ textarea.form-control {
 
 .block-30 {
   background-size: cover;
-  background-color: #ccc;
+  background-color: #b3b3b3;
   padding: 0;
   position: relative; }
   .block-30:before {
-    background: #000;
+    background: #b3b3b3;
     position: absolute;
     content: "";
     top: 0;
@@ -8559,7 +8559,7 @@ textarea.form-control {
       transform: translateY(-50%);
       content: ""; }
   .block-30 .heading {
-    color: #fff;
+    color: #868d93;
     font-size: 30px;
     line-height: 1.1;
     margin-bottom: 50px; }
