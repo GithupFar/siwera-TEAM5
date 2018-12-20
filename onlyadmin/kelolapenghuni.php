@@ -275,10 +275,10 @@ $(document).ready(function(){
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-                       <h2>Data <b>Gedung</b></h2>
+                       <h2>Data <b>Penghuni</b></h2>
                     </div>
           <div class="col-sm-6">
-            <a href="#addEmployeeModal" class="btn btn-warning" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Tambah Data</span></a>
+            <a href="#" class="btn btn-warning" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Unduh Data<span></a>
           </div>
                 </div>
             </div>
@@ -493,27 +493,27 @@ $(document).ready(function(){
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>NRP</label>
+              <label>Nama</label>
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>NRP</label>
+              <label>Tanggal Lahir</label>
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
               <label>Fakultas</label>
               <select name="cicilan">
                 <option>-</option>
-                <option>Putri</option>
-                <option>Putra</option>
+                <option>FTIK</option>
+                <option>FTK</option>
               </select> 
             </div>
             <div class="form-group">
               <label>Departemen</label>
               <select name="cicilan">
                 <option>-</option>
-                <option>Single Blok</option>
-                <option>Twin Blok</option>
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
               </select> 
             </div>
             <div class="form-group">
@@ -539,41 +539,49 @@ $(document).ready(function(){
       <div class="modal-content">
         <form>
           <div class="modal-header">            
-            <h4 class="modal-title">Edit Pembayaran</h4>
+            <h4 class="modal-title">Edit Penghuni</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
             <div class="form-group">
-              <label>ID Gedung</label>
-              <input type="text" class="form-control" required placeholder="G001">
+              <label>ID Penghuni</label>
+              <input type="text" class="form-control" required placeholder="P001">
+            </div>
+            <div class="form-group">
+              <label>NRP</label>
+              <input type="text" class="form-control" required placeholder="05111640000001">
             </div>
             <div class="form-group">
               <label>Nama</label>
-              <input type="text" class="form-control" required placeholder="Gedung A">
+              <input type="text" class="form-control" required placeholder="A">
             </div>
             <div class="form-group">
-              <label>Tipe : </label>
+              <label>Tanggal Lahir</label>
+              <input type="text" class="form-control" required placeholder="22/01/1997">
+            </div>
+            <div class="form-group">
+              <label>Fakultas</label>
               <select name="cicilan">
                 <option>-</option>
-                <option>Single Blok</option>
-                <option>Twin Blok</option>
-              </select>
+                <option>FTIK</option>
+                <option>FTK</option>
+              </select> 
             </div>
             <div class="form-group">
-              <label>Jenis : </label>
+              <label>Departemen</label>
               <select name="cicilan">
                 <option>-</option>
-                <option>Putri</option>
-                <option>Putra</option>
-              </select>
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
+              </select> 
             </div>
             <div class="form-group">
-              <label>Jumlah lantai</label>
-              <input type="text" class="form-control" required placeholder="1">
+              <label>No HP</label>
+              <input type="text" class="form-control" required placeholder="08xxxxxxxxxx">
             </div>
             <div class="form-group">
-              <label>Fasilitas</label>
-              <input type="text" class="form-control" required placeholder="Dapur">
+              <label>Alamat</label>
+              <input type="text" class="form-control" required placeholder="JL. XX no XX">
             </div>          
           </div>
           <div class="modal-footer">
