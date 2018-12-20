@@ -52,6 +52,7 @@
               <span class="subheading-sm">Selamat Datang</span>
               <h2 class="heading">SI Website Asrama ITS</h2>
               <p><a href="listgedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+                <a href="kelolakamar.php" class="btn py-3 px-3 btn-primary">Kelola Kamar</a>
               <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
               <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a>
               <a href="kelolapemesanan.php" class="btn py-3 px-3 btn-primary">Kelola Pemesanan</a></p>
@@ -66,6 +67,7 @@
               <span class="subheading-sm">Selamat Datang</span>
               <h2 class="heading">SI Website Asrama ITS</h2>
               <p><a href="listgedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+                <a href="kelolakamar.php" class="btn py-3 px-3 btn-primary">Kelola Kamar</a>
               <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
               <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a>
               <a href="kelolapemesanan.php" class="btn py-3 px-3 btn-primary">Kelola Pemesanan</a></p>
@@ -80,6 +82,7 @@
               <span class="subheading-sm">Selamat Datang</span>
               <h2 class="heading">SI Website Asrama ITS</h2>
                   <p><a href="listgedung.php" class="btn py-3 px-3 btn-primary">Kelola Gedung</a>
+                    <a href="kelolakamar.php" class="btn py-3 px-3 btn-primary">Kelola Kamar</a>
                   <a href="kelolapenghuni.php" class="btn py-3 px-3 btn-primary">Kelola Penghuni</a>
                   <a href="kelolaberita.php" class="btn py-3 px-3 btn-primary">Kelola Berita</a>
                   <a href="kelolapemesanan.php" class="btn py-3 px-3 btn-primary">Kelola Pemesanan</a></p>
